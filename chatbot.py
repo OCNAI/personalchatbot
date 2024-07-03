@@ -54,7 +54,7 @@ def chatting(chain, user_input):
     return (response["answer"])
 
 if __name__ == "__main__":
-    docs = doc_from_pc(r'C:\Users\YOURUSER\Desktop\ChatbotRAGdocument', "trainingdoc.txt") #replace YOURUSER with your usernmame. You can also copy the complete path of the folder where your document is located and replace the entire string.
+    docs = doc_from_pc(r'C:\Users\YOURUSER\Desktop\personalchatbot', "trainingdoc.txt") #replace YOURUSER with your usernmame. You can also copy the complete path of the folder where your document is located and replace the entire string.
     vectorStore = create_database(docs)
     chain = create_chain(vectorStore)
 
